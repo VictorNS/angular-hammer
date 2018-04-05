@@ -1,0 +1,16 @@
+.outer {
+  width: 300px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 70px;
+  border: solid 1px black;
+  white-space: nowrap;
+  overflow-x: scroll;
+  user-select: none;
+}
+
+.item {
+  display: inline-block;
+  width: 30px;
+}

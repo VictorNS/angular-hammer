@@ -1,13 +1,13 @@
 .outer {
   width: 300px;
   max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto; hm, nop, lets keep left :-)
+  margin-right: auto;*/
   line-height: 70px;
   border: solid 1px black;
   white-space: nowrap;
   overflow-x: scroll;
-  user-select: none;
+  //user-select: none; see hammer settings
 }
 
 .item {

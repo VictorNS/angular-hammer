@@ -1,0 +1,10 @@
+<h1>
+  Horizontal scroll
+</h1>
+<h3>
+  You can scroll the DIV.
+</h3>
+
+<div class="outer" #scrollable (panstart)="onPanStart()" (pan)="onPan($event)" (panend)="onPanEnd($event)">
+  <span class="item" *ngFor="let i of numbers">{{i}}</span>
+</div>

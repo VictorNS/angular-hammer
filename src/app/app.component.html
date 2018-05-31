@@ -1,9 +1,18 @@
-<div style="text-align:center">
-  <h1>
-    You can scroll the DIV.
-  </h1>
-</div>
-
-<div class="outer" #scrollable (panstart)="onPanStart()" (pan)="onPan($event)" (panend)="onPanEnd($event)">
-  <span class="item" *ngFor="let i of numbers">{{i}}</span>
+<div class="main-container">
+  <div class="menu">
+    <ul>
+      <li>
+        <a routerLink="/Events">Just events</a>
+      </li>
+      <li>
+        <a routerLink="/Hscroll">Horizontal scroll</a>
+      </li>
+      <li>
+        <a routerLink="/Vscroll">Vertical scroll</a>
+      </li>
+    </ul>
+  </div>
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
 </div>

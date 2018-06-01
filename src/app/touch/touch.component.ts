@@ -15,4 +15,8 @@ export class TouchComponent {
     }
   }
 
+  onClick(i) {
+    console.log(`Click ${i}`);
+  }
+
 }

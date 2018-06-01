@@ -22,12 +22,12 @@ export class HScrollComponent {
   onPanStart() {
     this._initialScrollPosition = this._div.nativeElement.scrollLeft;
   }
-  onPan(event) {
-    this._div.nativeElement.scrollLeft = this._initialScrollPosition - event.deltaX;
+  onPan(ev) {
+    this._div.nativeElement.scrollLeft = this._initialScrollPosition - ev.deltaX;
   }
-  onPanEnd(event) {
-    const d = event.deltaX < 0 ? -1 : 1;
-    const newPos = this._div.nativeElement.scrollLeft + d * event.velocityX * 10;
+  onPanEnd(ev) {
+    const d = ev.deltaX < 0 ? -1 : 1;
+    const newPos = this._div.nativeElement.scrollLeft + d * ev.velocityX * 10;
     console.log('scrollLeft, newPos', this._div.nativeElement.scrollLeft, newPos);
     this._div.nativeElement.scrollLeft = newPos;
   }

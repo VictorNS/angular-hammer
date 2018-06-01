@@ -1,3 +1,12 @@
 <h1>
   Vertical scroll
 </h1>
+<h3>
+  The DIV catches events: panup pandown.
+</h3>
+
+<div class="outer" #scrollable
+  (panup)="onPan($event)"
+  (pandown)="onPan($event)">
+  {{text}}
+</div>

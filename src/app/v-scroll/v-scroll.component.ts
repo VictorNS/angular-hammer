@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-v-scroll',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class VScrollComponent {
 
-  constructor() { }
+  text: string;
+
+  onPan(ev) {
+    this.text = ev.type + ' gesture detected.';
+  }
 
 }

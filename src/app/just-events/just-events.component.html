@@ -1,3 +1,15 @@
 <h1>
   Just events
 </h1>
+<h3>
+  The DIV catches events: panleft panright tap press.
+</h3>
+
+<div class="outer"
+  (panleft)="onEvent($event)"
+  (panright)="onEvent($event)"
+  (tap)="onEvent($event)"
+  (press)="onEvent($event)"
+  >
+  {{text}}
+</div>

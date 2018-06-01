@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class JustEventsComponent {
 
-  constructor() { }
+  text: string;
+
+  onEvent(ev) {
+    this.text = ev.type + ' gesture detected.';
+  }
 
 }

@@ -7,13 +7,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { HScrollComponent } from './h-scroll/h-scroll.component';
 import { VScrollComponent } from './v-scroll/v-scroll.component';
 import { JustEventsComponent } from './just-events/just-events.component';
+import { TouchComponent } from './touch/touch.component';
+import { ToucherDirective } from './toucher.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HScrollComponent,
     VScrollComponent,
-    JustEventsComponent
+    JustEventsComponent,
+    TouchComponent,
+    ToucherDirective
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+<h1>
+  Angular touch events
+</h1>
+<h3>
+  We don't use HammerJS for this page!
+</h3>
+<h3>
+  The DIV catches touch events via directive.
+</h3>
+<p>
+  You need to open the developer tools and turn on the touch emulation.
+</p>
+<p>
+  In this example we prevent a scroll event by <i>ev.preventDefault();</i> and change a scroll position manually.
+</p>
+
+<div appToucher class="outer">
+  <div class="item" *ngFor="let i of numbers">{{i}}</div>
+</div>
